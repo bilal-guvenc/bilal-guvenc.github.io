@@ -1,19 +1,45 @@
-
-body {
-  font-family: arial, sans-serif;
-  margin: 12px;
-  font-size: 24px;
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background-color: #1e1e1e;
+  color: #d4d4d4;
+  overflow: hidden;
 }
 
-img {
-  max-width: 100%;
-  display: block;
+.container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
 }
 
-media (min-width: 575px) {
-  article {
-    width: 550px;
-    margin-left: auto;
-    margin-right: auto;
-  }
+#display-panel {
+  flex: 1;
+  padding: 20px;
+  border-right: 1px solid #333;
+  overflow-y: auto;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  box-sizing: border-box;
+}
+
+#input-panel {
+  flex: 1;
+  display: flex;
+}
+
+#notepad {
+  flex: 1;
+  background-color: #252526;
+  color: #d4d4d4;
+  border: none;
+  padding: 20px;
+  font-size: 16px;
+  line-height: 1.5;
+  resize: none;
+  outline: none;
+  box-sizing: border-box;
+  font-family: Consolas, 'Courier New', monospace;
 }
